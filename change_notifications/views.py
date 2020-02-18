@@ -25,9 +25,9 @@ class UserView(APIView):
             user = Users.objects.filter(login=login, password_hash=password_hash)
             user = user[0]
             if status == "add":
-                Notifications.objects.create(user_id=user,text=note["text"], date=note["date"])
-            elif status =="change":
-                note_c =Notifications.objects.filter(user_id=user,date=note["date"])
+                Notifications.objects.create(user_id=user, text=note["text"], date=note["date"])
+            elif status == "change":
+                note_c = Notifications.objects.filter(user_id=user, date=note["date"])
                 note_c = note_c[0]
                 note_c.text = note["text"]
                 note_c.save()
