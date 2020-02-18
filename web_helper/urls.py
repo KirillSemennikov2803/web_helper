@@ -19,5 +19,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth', include('auth_my.urls')),
-    path('switch_notes', include('switch_notes.urls')),
+    path('switch_notes', include('switch_notes.urls')),\
+    path('switch_notifications', include('switch_notifications.urls')),
+    path('change_notes', include('change_notes.urls')),
 ]

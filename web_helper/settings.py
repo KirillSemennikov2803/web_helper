@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'auth_my',
+    'switch_notes',
+    'switch_notifications',
+    'change_notes'
 ]
 
 MIDDLEWARE = [
